@@ -19,6 +19,7 @@ $rust\
 $scala\
 $conda\
 $python\
+$hostname\
 $time\n  \
 [󱞪](fg:iris) \
 """
@@ -83,6 +84,12 @@ format = "[](fg:overlay)[ 󰧱 $user ]($style)[](fg:overlay) "
 show_always = true
 style_root = "bg:overlay fg:iris"
 style_user = "bg:overlay fg:iris"
+
+[hostname]
+ssh_only = true
+ssh_symbol = "󰒋"
+format = "[](fg:overlay)[ $hostname $ssh_symbol ]($style)($style)[](fg:overlay) "
+style = "bg:overlay fg:iris"
 
 # Languages
 
