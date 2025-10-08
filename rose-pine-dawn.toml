@@ -1,6 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
+$hostname\
 $container\
 $username\
 $directory\
@@ -20,7 +21,6 @@ $rust\
 $scala\
 $conda\
 $python\
-$hostname\
 $time\n  \
 [󱞪](fg:iris) \
 """
@@ -89,7 +89,7 @@ style_user = "bg:overlay fg:iris"
 [hostname]
 ssh_only = true
 ssh_symbol = "󰒋"
-format = "[](fg:overlay)[ $hostname $ssh_symbol ]($style)($style)[](fg:overlay) "
+format = "[](fg:overlay)[ $ssh_symbol $hostname ]($style)($style)[](fg:overlay) "
 style = "bg:overlay fg:iris"
 
 [container]
